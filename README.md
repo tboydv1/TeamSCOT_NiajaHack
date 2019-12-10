@@ -4,21 +4,20 @@
 
 
 #Project title
-Team scot build a teachers management platform to help teachers manage teaching activities and student progress.
+We will build a platform that enables prospective home buyers to own their homes with ease and take early possession.
 
 #Description
-We would build a platform to enable teachers do the following
-1. Search for updates course notes
-2. Prepare lesson notes automatically
-3. Prepare tests for students
-4. Keep track of students records
-5. Generate student report sheet
-6. Ask questions from other teachers
+1. Register potential homeowners
+2. Allow potential owners to indicate financial status...income/expenses/number of dependents.
+3. Allow potential owners to select a payment plan.
+4. We supervise the property location, building construction process, and maintenance.
+5. Allow potential owner to move into the home upon payment of 50%
 
 #Team members (name & role)
 Christain - UI/UX 
-Tobi - Backend/Product day
-Scoolj - Fullstack
-Bisi- Database admin/Backend
+Tobi - FullStack
+Dami - FullStack
+
+
 
 Issues for task management.
