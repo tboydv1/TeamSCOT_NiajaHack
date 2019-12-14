@@ -14,9 +14,10 @@ We will build a platform that enables prospective home buyers to own their homes
 5. Allow potential owner to move into the home upon payment of 50%
 
 #Team members (name & role)
-Christain - UI/UX 
+Christain - UI/UX
 Tobi - FullStack
 Dami - FullStack
+Micheal-Business Analyst
 
 
 
