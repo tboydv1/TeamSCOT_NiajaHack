@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hackhouse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    <div class="page-header">
+        <a href="{% url 'post_new' %}" class = "top-menu"><span class="glyphicon glyphicon-plus" style="color: green;">+</span></a>
+        <h1 class="text-center" style="text-shadow: 2px 5px #20e3cc; word-spacing: 15px; color: white; font-family: 
+        'Yeon Sung', cursive; font-size: 63px; direction:rtl;"><i class="fas fa-bezier-curve"></i>HackHouse</h1>
+        
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-6">
+                {% block content %}
+
+                {% endblock %}
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
