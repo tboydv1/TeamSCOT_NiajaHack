@@ -74,13 +74,14 @@ WSGI_APPLICATION = 'housing.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', #Your database engine
-        'HOST': 'localhost', #host name
         'NAME': 'scot_pot', #Name of your DB
         'USER': 'Chris', #Name of user in database
-        'PASSWORD': 'Lenovo007.', #The user's password
+        'PASSWORD': 'Lenovo007', #The user's password
+        'HOST': 'localhost',  # host name
         'PORT': '3306' #Database port number
     }
 }

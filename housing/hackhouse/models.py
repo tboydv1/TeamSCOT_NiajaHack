@@ -5,18 +5,16 @@ from django.conf import settings
 
 # Create your models here.
 # Here, we created a model class with its attributes
-class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
+class HouseOwner(models.Model):
 
-    # Here, we created a method to know post time.
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email = models.CharField(max_length=50)
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=30)
 
-    #
-    def __str__(self):
-        return self.title
+
+
+
+
+
