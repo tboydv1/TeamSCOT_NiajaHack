@@ -1,4 +1,6 @@
 {% include 'hackhouse/base.html' %}
+
+<h2>Registration page</h2><br/><br/>
 <form action= "{% url 'register' %}" method="post">
     {% csrf_token %}
     <label for="firstname">Firstname</label><br/>
@@ -19,3 +21,5 @@
     <input type="submit" value="Submit" />
 
 </form>
+
+<a href="/">Go Back</a>
