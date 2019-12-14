@@ -1,6 +1,7 @@
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout,
 from django.shortcuts import render, redirect
 from . models import HouseOwner
+from django.contrib.auth.forms import 
 # Create your views here.
 
 
@@ -30,4 +31,6 @@ def register(request):
 def success(request):
     return render(request, "hackhouse/Congrats.html")
 
-# def user_login(request):
+def user_login(request):
+    if request.method == 'POST'
+        form = Use
