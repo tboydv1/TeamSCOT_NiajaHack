@@ -1,12 +1,10 @@
 {% extends 'hackhouse/base.html' %}
 
-<h2>Home</h2>
+
 
 {% block content %}
-{% if user.is_authenticated %}
-    Hi {{user.username }}!
-{% else %}
-<p>You are not logged in</p>
-<a href="{% url 'login' %}">login</a>
-{% endif %}
+<h2>Home</h2>
+
+    <h1>Hi {{ user }}</h1>
+
 {% endblock %}
