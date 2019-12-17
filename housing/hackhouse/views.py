@@ -36,7 +36,7 @@ def register(request):
 
         return redirect("/hackhouse/successful")
     else:
-        return render(request, 'hackhouse/register.html')
+        return render(request, 'hackhouse/signin.html')
 
 def success(request):
     return render(request, "hackhouse/Congrats.html")

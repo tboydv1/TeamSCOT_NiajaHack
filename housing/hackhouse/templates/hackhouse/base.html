@@ -16,23 +16,6 @@
 
 <body>
 
-
-<!--        <ul class="nav">-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link active" href="{% url 'index' %}">Home</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'register' %}">Register</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'about' %}">About</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link disabled" href="{% url 'login' %}" tabindex="-1" aria-disabled="true">Login</a>-->
-<!--      </li>-->
-<!--    </ul>-->
-
-
     <div class="container-fluid">
         <!-------------------------------------------Navigation Start-------------------------------------------------------------->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -45,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'about' %}">About Us</a>
@@ -62,5 +45,13 @@
                 </ul>
             </div>
         </nav>
+
+        {% block content %}
+
+        {% endblock %}
+        </div>
+
+</body>
+</html>
 
 
