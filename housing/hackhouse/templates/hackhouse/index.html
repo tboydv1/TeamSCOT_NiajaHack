@@ -1,0 +1,271 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta description="">
+    <meta keywords="">
+        <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+
+<style>
+
+    html {
+      overflow-x: hidden;
+    }
+    .div1{
+        height:500px;
+        margin:auto;
+    }
+
+    div.nav1{
+        height:150px;
+        margin:auto;
+    }
+
+    .ex1{
+        margin:auto;
+        padding:10px;
+    }
+
+  .link{
+
+    color:black;
+  }
+
+  .input1{
+    border:
+  }
+
+  .sec{
+  font-size:2.0rem;
+  font-family:Tiempos;
+  font-weight:700;
+  padding-top:30px;
+
+  }
+  .imgp{
+  position:relative;
+  top:150px;
+  color:white;
+  font-weight:700;
+
+
+
+  }
+
+  .fil{
+  background: #f5f6f7;
+  padding-top:20px;
+  padding-bottom:50px;
+  padding-left:40px;
+
+  }
+
+  .imgw{
+    width:60%;
+
+
+  }
+
+  .tx{
+    font-size:0.8rem;
+    color:grey;
+  }
+
+  .log{
+  position: relative;
+  top:10px;
+
+  }
+
+
+</style>
+
+<body>
+
+    <div class="container-fluid">
+        <!-----------------------------------------Navigation Start------------------------------------------------------------>
+        <div class ="nav1">
+    <nav class="border ex1">
+<!--        <img class="log" src="{% static 'img2/logo2.png' %}"/>-->
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active link" href="{% url 'index' %}">Home</a>
+          </li>
+              <li class="nav-item">
+                    <a class="nav-link link" href="{% url 'about' %}">FAQs</a>
+              </li>
+                  <li class="nav-item">
+                    <a class="nav-link link" href="{% url 'login' %}">Login</a>
+                  </li>
+                      <li class="nav-item">
+                        <a class="nav-link link" href="{% url 'register' %}">Get Started</a>
+                      </li>
+        </ul>
+    </nav>
+        </div >
+
+
+
+<!--------------------------------------------------------Navigation end----------------------------------------------->
+
+            <div class="container div1" >
+
+              <div class="row">
+                <div class="col" style="position:relative; top:70px;">
+                    <h1 style="font-size:3.5rem; font-family:Tiempos; font-weight:700">A better way to own a home in Lagos</h1><br/>
+                     <div class="form-group">
+                      <label for="inputState">
+                          <p>Search our listings for apartment homes or duplex and flexible payments plans
+                          </p></label>
+                      <select id="inputState" class="form-control">
+                        <option selected style="font-weight:100">Where do you want to live?</option>
+                        <option>Ikoyi</option>
+                       <option>Lekki</option>
+                       <option>MaryLand</option>
+                      </select>
+                    </div>
+<!--                    <input type="text" placeholder="where do you want to live?">-->
+
+                </div>
+                <div class="col" style="position:relative; top:20px;">
+                    <img style="width:100%" src="{% static 'img2/apt3.png' %}">
+                </div>
+              </div>
+            </div>
+    </div>
+        <!--------------------------------------------Services------------------------------------------->
+
+        <!-------------------------Three Column Section--------------------------->
+
+        <div class="container-fluid padding fil">
+             <div class="row services text-center">
+            <div class="col-12">
+                <h2 class="sec">Explore your neighbourhood</h2>
+            </div>
+            <hr>
+        </div>
+        <br>
+            <div class="row text-center padding">
+                <div class="col-md-3">
+                     <h6 class="imgp">Lekki</h6>
+                    <img class="rounded" src="{% static 'img2/lekki.png' %}">
+                </div>
+                <div class="col-md-3">
+                     <h6 class="imgp">Ikoyi</h6>
+                    <img class="rounded" src="{% static 'img2/Ikoyi.png' %}">
+
+                </div>
+                <div class="col-md-3">
+                     <h6 class="imgp">Victoria Island</h6>
+                    <img class="rounded" src="{% static 'img2/vi.png' %}">
+
+                </div>
+                 <div class="col-md-3">
+                     <h6 class="imgp">Lekki Phase1</h6>
+                    <img class="rounded" src="{% static 'img2/Lekki.png' %}">
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+<!---------------------------------------------------Explore--------------------------------------------------------------->
+        <div class="row services text-center" style="padding-top:50px;">
+            <div class="col-12">
+                <h2 class="sec" >You're three steps away from your perfect home</h2>
+            </div>
+            <hr>
+        </div>
+        <br>
+        <div class="container-fluid padding" style="padding-left:40px;">
+            <div class="row text-center padding">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img class="imgw" src="{% static 'img2/con1.png' %}"/>
+                    <h3 class="sec">Find the home you need</h3>
+                    <p  class="tx text-md-left font-italic">We offer flexible options, designed around your needs.
+Browse shared or entire homes by where you want to live and how frequently you want to pay</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                     <img class="imgw" src="{% static 'img2/con2.png' %}"/>
+                    <h3 class="sec">Choose a payment plan</h3>
+                    <p  class="tx text-md-left text-lg-left font-italic">You can easily book a tour of your prospective home online.
+Our neighbourhood reps are readily available to show you around at no cost to you.</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                     <img class="imgw" src="{% static 'img2/con3.png' %}"/>
+
+                    <h3 class="sec">Book in minutes</h3>
+                    <p class="tx text-md-left font-italic">You can boot your future home in a few clicks.
+We've streamlined the entire process to get you moved in, faster.</p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <!----------------------------------------footer---------------------------------------------->
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p class="h6">&copy All right Reversed. Pinnacle</p>
+                    </div>
+
+                </div>
+
+                <script src="{% static 'signup/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</body>
+</html>

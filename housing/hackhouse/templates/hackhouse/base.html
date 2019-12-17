@@ -1,19 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html>
 <head>
-    <meta charset="UTF-8">
-    {% load static %}
+   <meta charset="utf-8">
+    <meta description="">
+    <meta keywords="">
+        <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 
-    <title>Housing</title>
+ <style>
+
+    div.nav1{
+        height:150px;
+        margin:auto;
+    }
+
+    .ex1{
+        margin:auto;
+        padding:10px;
+    }
+
+     .link{
+
+    color:black;
+  }
+
 </head>
+
+</style>
+
+
+
 <body>
 
-    {% block content %}
-        <h1>Team scot</h1>
-    {% endblock %}
+    <div class="container-fluid">
+        <!-----------------------------------------Navigation Start------------------------------------------------------------>
+        <div class ="nav1">
+    <nav class="border ex1">
+<!--        <img class="log" src="{% static 'img2/logo2.png' %}"/>-->
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active link" href="{% url 'index' %}">Home</a>
+          </li>
+              <li class="nav-item">
+                    <a class="nav-link link" href="{% url 'about' %}">About Us</a>
+              </li>
+                  <li class="nav-item">
+                    <a class="nav-link link" href="{% url 'login' %}">Login</a>
+                  </li>
+                      <li class="nav-item">
+                        <a class="nav-link link" href="{% url 'register' %}">Get Started</a>
+                      </li>
+        </ul>
+    </nav>
+        </div >
+
+        {% block content %}
+
+        {% endblock %}
+        </div>
 
 </body>
 </html>
-
 
 
