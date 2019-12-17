@@ -1,6 +1,8 @@
+{% extends 'hackhouse/base.html' %}
 {% load static %}
 
-<html lang="en">
+{% block content %}
+
 
 <head>
     <meta charset="UTF-8">
@@ -13,16 +15,20 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="{% static 'signup/css/style.css' %}">
+
+
 </head>
 
 <body>
 
-    <div class="main">
+<!--    <div class="main">-->
 
         <!-- Sign up form -->
-        <section class="signup">
+<!--        <section class="signup">-->
             <div class="container">
-                <div class="signup-content">
+<!--                <div class="signup-content">-->
+                <div class="row">
+                <div class="col-md-8">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
                         <form method="POST" class="register-form" id="register-form">
@@ -47,34 +53,32 @@
                                 <label for="password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="password" id="password" placeholder="Enter password" />
                             </div>
-<!--                            <div class="form-group">-->
-<!--                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>-->
-<!--                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />-->
-<!--                            </div>-->
-<!--                            <div class="form-group">-->
-<!--                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />-->
-<!--                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>-->
-<!--                            </div>-->
+
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
                             </div>
                         </form>
                     </div>
+                     </div>
+                <div class="col-md-4">
                     <div class="signup-image">
                         <figure><img src="{% static 'signup/images/signup-image.jpg' %}" alt="sing up image"></figure>
                         <a href="#" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
+                    </div>
+<!--                </div>-->
+
             </div>
-        </section>
+<!--        </section>-->
 
 
 
-    </div>
+<!--   </div>&ndash;&gt;-->
 
     <!-- JS -->
     <script src="{% static 'signup/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 </body>
+{% endblock %}
 
-</html>

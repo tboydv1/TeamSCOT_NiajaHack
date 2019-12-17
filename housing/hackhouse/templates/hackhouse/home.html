@@ -1,10 +1,136 @@
 {% extends 'hackhouse/base.html' %}
 
 
-
+{% load static %}
 {% block content %}
-<h2>Home</h2>
+<head>
 
-    <h1>Hi {{ user }}</h1>
+
+
+
+</head>
+<body>
+
+
+
+<div class="container-fluid">
+
+    <!--navigation-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Welcome {{ user }}</h1>
+
+        </div>
+
+    <div class="col-md-2">
+    <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Locations
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Lekki</a>
+    <a class="dropdown-item" href="#">Victoria Island</a>
+    <a class="dropdown-item" href="#">Ikoyi</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Ikeja</a>
+  </div>
+</div>
+    </div>
+         <div class="col-md-2">
+         <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Payment Plan
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Weekly</a>
+    <a class="dropdown-item" href="#">Monthly</a>
+    <a class="dropdown-item" href="#">Quaterly</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Yealy</a>
+  </div>
+</div>
+         </div>
+          <div class="col-md-2">
+         <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Price
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">1m - 2m</a>
+    <a class="dropdown-item" href="#">3m - 4m</a>
+    <a class="dropdown-item" href="#">5m - 6m</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">10m and above</a>
+  </div>
+</div>
+         </div>
+          <div class="col-md-2">
+         <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Homes
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Self-contain</a>
+    <a class="dropdown-item" href="#">2 beds</a>
+    <a class="dropdown-item" href="#">3 beds</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">4 beds</a>
+  </div>
+</div>
+         </div>
+        </div>
+        </div>
+</div>
+    <!--body-->
+
+    <div class="row">
+        <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+          <img src="{% static 'img2/room1.JPG' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+    </div>
+        </div>
+            <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+          <img src="{% static 'img2/room2.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+    </div>
+        </div>
+            <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+          <img src="{% static 'img1/3.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+    </div>
+        </div>
+            <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+          <img src="{% static 'img1/4.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+    </div>
+        </div>
+        </div>
+</div>
+
+</body>
+
 
 {% endblock %}

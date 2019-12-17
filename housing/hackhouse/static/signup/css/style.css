@@ -187,7 +187,7 @@ h2 {
 
 .main {
   background: #f8f8f8;
-  padding: 150px 0; }
+  padding: 10px ; }
 
 .clear {
   clear: both; }
@@ -198,10 +198,13 @@ body {
   color: #222;
   background: #f8f8f8;
   font-weight: 400;
-  font-family: Poppins; }
+  font-family: Poppins;
+    height:100%;
+
+  }
 
 .container {
-  width: 900px;
+  width: 200px;
   background: #fff;
   margin: 0 auto;
   box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
@@ -250,7 +253,7 @@ body {
   -ms-transform: translate(-50%, -50%); }
 
 .signup {
-  margin-bottom: 150px; }
+   }
 
 .signup-content {
   padding: 75px 0; }
@@ -263,7 +266,9 @@ body {
   margin: 0 55px; }
 
 .form-title {
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  padding-top:10px;
+  }
 
 .signup-image {
   margin-top: 45px; }

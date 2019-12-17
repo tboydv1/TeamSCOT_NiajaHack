@@ -46,9 +46,6 @@ def success(request):
 
 def user_login(request):
 
-
-
-
     if request.method == 'POST':
 
         user_name = request.POST['username']
@@ -67,7 +64,7 @@ def user_login(request):
             # else:
             #     messages.error(request, "Invalid username or password")
         else:
-            return HttpResponse("User login not valid")
+            return render(request= request, template_name='hackhouse/loginPage.html')
     else:
-        form = AuthenticationForm()
-        return render(request= request, template_name='hackhouse/loginPage.html', context={"form":form})
+
+        return render(request= request, template_name='hackhouse/loginPage.html')
